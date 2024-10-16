@@ -2,19 +2,19 @@ name: GitHub Actions Demo
 on: 
   push:
     branches:
-      -main
+      - main
     paths-ignore:
       - '.github/**'
   pull_request:
     branches:
       - main
     workflow_dispatch:
-      schedule:
+    schedule:
         cron: '0 6 * * 0' 
 
 jobs:
   build:
     runs-on: ubuntu-latest
-  steps:
-    -name: Checkout 
+    steps:
+      -name: Checkout 
   
