@@ -15,6 +15,8 @@ on:
 jobs: 
   Build:
     runs-on: ubuntu-latest
+    steps:
+      - run: echo "🧪 Testing..."
 
 
   Test:
